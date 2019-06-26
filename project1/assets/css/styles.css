@@ -1,0 +1,317 @@
+body{
+	margin: 0px;
+
+}
+
+.background{
+	height: 30em;
+	/*background-image: url("../images/logo.png");*/
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+/** css used to make images responsive **/
+
+.imgContainer{
+	text-align: center;
+}
+
+.headerImg{
+	margin: 0 auto;
+	text-align: center;
+	max-width: 100%;
+/* 	height: auto;  */
+	padding: 0px;
+}
+
+.imgResp{
+	margin: 0 auto;
+	text-align: center;
+	max-width: 100%;
+/* 	height: auto;  */
+	padding: 0px;
+}
+
+.imgRatio{
+	height: 30%;
+	width: 30%;
+}
+/** image responsiveness ends here**/
+
+/** Hamburger CSS, Basic Structure was obtained from W3dchools **/
+
+.hamburger{
+  	cursor: pointer;
+	float: right;
+	display: none;
+	margin-right: .4em;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+	background-color: #FFF;
+	z-index: 4;
+}
+
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2{
+	opacity: 0;
+}
+
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/** navbar css **/
+nav {
+	width: 100%;
+	font-family: Arial,Helvetica,Nimbus Sans L,Liberation Sans,FreeSans,sans-serif;
+}
+
+nav #nav-inner {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+	background-color: rgb(0, 46, 78);
+}
+
+nav li{
+	float: left;
+}
+
+nav li > a{
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	color: #FFF;
+	display: block;
+	padding: 14px 16px;
+}
+
+nav li:hover{
+	background-color: rgba(17,17,17,.5);
+	transition: .5s;
+}
+
+.active{
+	background-color: rgba(17,17,17,.5);
+	transition: .5s;
+}
+/** navbar ends here **/
+
+
+
+
+/** Used to underline headers **/
+
+.headerLine{
+	text-align: center;
+	width: 2em;
+	border-bottom: .2em solid #dc221a;
+	margin: 0px auto;
+	padding-bottom: 1.5rem;
+	margin-bottom: 3.1rem;
+}
+
+.textLine{
+	text-align: center;
+	width: 80%;
+	border-bottom: .2em solid #67747c;
+	margin: 0px auto;
+	padding-bottom: 1.5rem;
+	margin-bottom: 3.1rem;
+}
+
+
+.heading{
+	color: #3b444f;
+	font-family: Arial,Helvetica,Nimbus Sans L,Liberation Sans,FreeSans,sans-serif;;
+	font-size: 2.8em;
+	font-weight: 100;
+	line-height: 1.3;
+  	margin-top: .5em;
+	margin-bottom: 0px;
+ 	position: relative;
+  	text-align: center;
+	display: block;
+	clear: both;
+	z-index: -10;
+}
+
+/** Styling for comments page **/
+
+.commentHeading{
+	color: #3b444f;
+	font-family: Benton Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 2.8em;
+	font-weight: 100;
+	line-height: 1.3;
+	margin-top: .5em;
+	margin-left: .5em;
+	margin-bottom: 0px;
+	position: relative;
+	text-align: left;
+	display: block;
+	clear: both;
+	z-index: -10;
+}
+
+/** Positioning for elements on the page **/
+
+.normText{
+	color: #67747c;
+	font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-align: center;
+	margin: 0 auto 3em;
+	width: 50%;
+	font-size: 1.8em;
+	line-height: 1.8;
+
+}
+
+label{
+	float: left;
+}
+
+footer{
+	background-color: rgba(17,17,17,.95);
+	text-align: center;
+
+}
+
+.aboutText{
+	color: #3b444f;
+	font-family: Benton Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 2.8em;
+	font-weight: 100;
+	line-height: 1.3;
+	margin-top: .5em;
+	margin-bottom: 0px;
+	position: relative;
+	display: block;
+	clear: both;
+}
+
+.ftext{
+	color: rgba(245,132,40,1);
+	font-family: Benton Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	font-size: 1.8em;
+	line-height: 1.8;
+}
+
+
+
+iframe{
+	text-align: center;
+	width: 80%;
+	height: 20em;
+}
+
+table, tr, td{
+	border: 1px solid black;
+}
+
+/** Used to resize height background image
+	for mobile devices
+ **/
+
+@media only screen and (max-width: 625px) {
+    .background{
+        height: 15em;
+    }
+
+	h2{
+		font-size: 2.3em;
+	}
+
+	.normText{
+			text-align: left;
+			font-size: 1.4em;
+			width: 70%;
+	}
+	.ftext{
+
+	}
+}
+
+@media only screen and (max-width:845px){
+	.headerImg{
+		margin: 0 auto;
+		text-align: center;
+		max-width: 100%;
+	/* 	height: auto;  */
+		padding: 0px;
+		position: relative;
+		top: 46px;
+	}
+
+	.hamburger{
+		display: inline-block;
+	}
+
+	nav{
+		top: 0px;
+		position: fixed;
+		width: 100%;
+		/*display: none;*/
+		background-color: rgb(0, 46, 78);
+		transition: .5s;
+	}
+
+	nav #nav-inner{
+		position: fixed;
+		width: 100%;
+		position: fixed;
+		width: 130px;
+		/*right: 0px;*/
+		right: -130px;
+		top: 39px;
+	}
+
+	nav ul{
+		position: relative;
+		background-color: rgb(0, 46, 78);
+		transition: .5s;
+		display: block;
+		max-width: 130px;
+	}
+
+	.ftext{
+		font-size: 1em;
+	}
+
+	nav ul a{
+		width:100%;
+	}
+
+	.box, #sales, #items {
+		-moz-box-shadow: 0 0 10px #000000;
+		-webkit-box-shadow:0 0 10px #000000;
+		box-shadow:0 0 10px #000000;
+		padding: 5px;
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		border-radius: 5px; 
+		border: 1px solid;
+		margin-top: 10px;
+	}
+}
